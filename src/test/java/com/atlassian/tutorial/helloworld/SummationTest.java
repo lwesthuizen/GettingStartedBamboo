@@ -10,14 +10,14 @@ public class SummationTest
 	public void AddTwoNumbersPass()
 	{
 		Summation sum = new Summation();
-		assertTrue(sum.AddTwoNumbers(1, 1) == 2);
+		assertTrue("expected <2> but was <"+sum.AddTwoNumbers(1, 1)+">", sum.AddTwoNumbers(1, 1) == 2);
 	}
 
 	@Test
 	public void AddTwoNumberFail()
 	{
 		Summation sum = new Summation();
-		assertTrue(sum.AddTwoNumbers(1, 1) == 3);
+		assertTrue("expected <2> but was <"+sum.AddTwoNumbers(1, 1)+">",sum.AddTwoNumbers(1, 1) == 3);
 	}
 
 }
