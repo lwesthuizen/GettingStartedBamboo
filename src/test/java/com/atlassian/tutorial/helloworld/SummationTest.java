@@ -17,7 +17,7 @@ public class SummationTest
 	public void AddTwoNumberFail()
 	{
 		Summation sum = new Summation();
-		assertTrue("expected <2> but was <"+sum.AddTwoNumbers(1, 1)+">",sum.AddTwoNumbers(1, 1) == 3);
+		assertTrue("This test deliberately fails!", sum.AddTwoNumbers(1, 1) == 3);
 	}
 
 }
